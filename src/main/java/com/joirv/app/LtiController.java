@@ -2,6 +2,7 @@ package com.joirv.app;
 
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,6 +15,7 @@ import java.util.Map;
 public class LtiController {
 
 
+	@PostMapping("/launch")
 	public ResponseEntity<Map<String,String>> hanletLtiLaunch(HttpServletRequest request ){
 		Map<String,String> parameters = new HashMap<>();
 
