@@ -8,11 +8,11 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 public class WebConfig implements WebMvcConfigurer {
 
 
-	@Override
-	public void addCorsMappings(CorsRegistry registry) {
-		registry.addMapping("/**")
-		        .allowedOrigins("http://localhost:4200") // Cambia esto si tu frontend está en otro puerto o dominio
-		        .allowedMethods("*")
-		        .allowedHeaders("*");
-	}
+//	@Override
+//	public void addCorsMappings(CorsRegistry registry) {
+//		registry.addMapping("/**")
+//		        .allowedOrigins("http://localhost:4200") // Cambia esto si tu frontend está en otro puerto o dominio
+//		        .allowedMethods("*")
+//		        .allowedHeaders("*");
+//	}
 }

@@ -12,8 +12,8 @@ import java.util.Map;
 
 @RestController
 public class LtiController {
-	@Autowired
-	private LtiService ltiService;
+//	@Autowired
+//	private LtiService ltiService;
 
 
 	@PostMapping("/launch")
