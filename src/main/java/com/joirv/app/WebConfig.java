@@ -11,8 +11,9 @@ public class WebConfig implements WebMvcConfigurer {
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**")
-		        .allowedOrigins("https://main--melodic-twilight-f128ff.netlify.app/") // Cambia esto si tu frontend está en otro puerto o dominio
-		        .allowedMethods("*")
-		        .allowedHeaders("*");
+		        .allowedOrigins("https://link4campus.instructure.com", "https://main--melodic-twilight-f128ff.netlify.app/") // Cambia esto si tu frontend está en otro puerto o dominio
+		        .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
+		        .allowedHeaders("*")
+		        .allowCredentials(true);
 	}
 }
