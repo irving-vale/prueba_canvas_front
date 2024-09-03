@@ -11,7 +11,7 @@ public class WebConfig implements WebMvcConfigurer {
 	@Override
 	public void addCorsMappings(CorsRegistry registry) {
 		registry.addMapping("/**")
-		        .allowedOrigins("https://main--cool-melomakarona-f5fccd.netlify.app/") // Cambia esto si tu frontend está en otro puerto o dominio
+		        .allowedOrigins("https://main--melodic-twilight-f128ff.netlify.app/") // Cambia esto si tu frontend está en otro puerto o dominio
 		        .allowedMethods("*")
 		        .allowedHeaders("*");
 	}
