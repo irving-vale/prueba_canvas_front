@@ -84,7 +84,7 @@ public class LtiController {
 		}
 
 		// Redirige al frontend en Netlify después de procesar la solicitud
-		response.sendRedirect("https://main--melodic-twilight-f128ff.netlify.app/");
+		response.sendRedirect("https://main--melodic-twilight-f128ff.netlify.app");
 	}
 
 	@GetMapping("/role")
